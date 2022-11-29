@@ -1,26 +1,26 @@
 //
-//  ContentView.swift
+//  VideoListView.swift
 //  AfricaApp_SwiftUI
 //
-//  Created by Igor Ashurkov on 27.11.2022.
+//  Created by Igor Ashurkov on 29.11.2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct VideoListView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Videos")
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct VideoListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        VideoListView()
     }
 }
