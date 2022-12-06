@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Properties
+    
+    let coverImages: [CoverImage] = Bundle.main.decode("covers.json")
+    let animals: [Animal] = Bundle.main.decode("animals.json")
+    
+    // MARK: Body
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Content")
-        }
-        .padding()
+        NavigationView {
+            List {
+                CoverImageView(model: self.coverImages)
+                    .frame(height: 300)
+                    .listRowInsets(EdgeInsets(top: 0,
+                                              leading: 0,
+                                              bottom: 0,
+                                              trailing: 0))
+                
+                ForEach(self.animals) { animal in
+                    AnimalListItemView(model: animal)
+                }
+            } //: List
+            .navigationTitle("Africa")
+            .listStyle(.plain)
+        } //: NavigationView
     }
 }
 
