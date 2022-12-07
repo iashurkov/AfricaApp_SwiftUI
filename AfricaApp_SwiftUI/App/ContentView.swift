@@ -27,8 +27,10 @@ struct ContentView: View {
                                               trailing: 0))
                 
                 ForEach(self.animals) { animal in
-                    AnimalListItemView(model: animal)
-                }
+                    NavigationLink(destination: AnimalDetailView(model: animal)) {
+                        AnimalListItemView(model: animal)
+                    } //: NavigationLink
+                } //: ForEach
             } //: List
             .navigationTitle("Africa")
             .listStyle(.plain)
