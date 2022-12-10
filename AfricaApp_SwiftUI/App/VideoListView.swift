@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct VideoListView: View {
+    
+    // MARK: Properties
+    
+    @State private var videos: [Video] = Bundle.main.decode("videos.json")
+    
+    private let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
+    
+    // MARK: Body
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Videos")
-        }
-        .padding()
+        NavigationView {
+            List {
+                ForEach(self.videos) { item in
+                    VideoListItemView(model: item)
+                        .padding(.vertical, 8)
+                } //: ForEach
+            } //: List
+            .navigationTitle("Videos")
+            .navigationBarTitleDisplayMode(.inline)
+            .listStyle(InsetGroupedListStyle())
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        self.videos.shuffle()
+                        self.hapticImpact.impactOccurred()
+                    }) {
+                        Image(systemName: "arrow.2.squarepath")
+                            .foregroundColor(.accentColor)
+                    } //: Button
+                } //: ToolbarItem
+            } //: toolbar
+        } //: NavigationView
     }
 }
 

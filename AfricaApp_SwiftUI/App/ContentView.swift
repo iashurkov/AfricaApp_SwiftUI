@@ -11,8 +11,8 @@ struct ContentView: View {
     
     // MARK: Properties
     
-    let coverImages: [CoverImage] = Bundle.main.decode("covers.json")
-    let animals: [Animal] = Bundle.main.decode("animals.json")
+    private let coverImages: [CoverImage] = Bundle.main.decode("covers.json")
+    private let animals: [Animal] = Bundle.main.decode("animals.json")
     
     // MARK: Body
     
@@ -26,9 +26,9 @@ struct ContentView: View {
                                               bottom: 0,
                                               trailing: 0))
                 
-                ForEach(self.animals) { animal in
-                    NavigationLink(destination: AnimalDetailView(model: animal)) {
-                        AnimalListItemView(model: animal)
+                ForEach(self.animals) { item in
+                    NavigationLink(destination: AnimalDetailView(model: item)) {
+                        AnimalListItemView(model: item)
                     } //: NavigationLink
                 } //: ForEach
             } //: List
