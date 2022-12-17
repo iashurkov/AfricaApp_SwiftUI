@@ -9,13 +9,14 @@ import SwiftUI
 
 struct GalleryView: View {
     var body: some View {
-        VStack {
+        ScrollView(.vertical, showsIndicators: false) {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Gallery")
-        }
-        .padding()
+        } //: ScrollView
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(MotionAnimationView())
     }
 }
 
