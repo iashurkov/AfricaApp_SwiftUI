@@ -68,6 +68,9 @@ struct ContentView: View {
                                 AnimalListItemView(model: item)
                             } //: NavigationLink
                         } //: ForEach
+                        
+                        CreditsView()
+                            .modifier(CenterModifier())
                     } //: List
                 }
             } //: Group

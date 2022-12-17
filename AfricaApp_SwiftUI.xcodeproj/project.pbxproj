@@ -50,6 +50,8 @@
 		AAE85804294DEDD500C52A7B /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE85803294DEDD500C52A7B /* AnimalGridItemView.swift */; };
 		AAE8580A294DF7C400C52A7B /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE85809294DF7C400C52A7B /* Stickers.xcassets */; };
 		AAE8580E294DF7C400C52A7B /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AAE85807294DF7C300C52A7B /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAE85815294DF97C00C52A7B /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE85814294DF97C00C52A7B /* CreditsView.swift */; };
+		AAE85819294DFAE200C52A7B /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE85818294DFAE200C52A7B /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,8 @@
 		AAE85807294DF7C300C52A7B /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE85809294DF7C400C52A7B /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		AAE8580B294DF7C400C52A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE85814294DF97C00C52A7B /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		AAE85818294DFAE200C52A7B /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		AA0E52FC2933F31D00FB9DF5 /* AfricaApp_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AAE85817294DFAD400C52A7B /* Modifier */,
 				AAA55113294A25F000691F99 /* Helper */,
 				AA9FAE43293D22EF0050D903 /* Extension */,
 				AA8694D32936824F004A7F52 /* AfricaApp-SwiftUI-Info.plist */,
@@ -213,6 +218,7 @@
 				AA9FAE3E293D1DF10050D903 /* CoverImageView.swift */,
 				AA5C40DA293FA33B00D4D167 /* AnimalListItemView.swift */,
 				AAE85803294DEDD500C52A7B /* AnimalGridItemView.swift */,
+				AAE85814294DF97C00C52A7B /* CreditsView.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -322,6 +328,14 @@
 				AAE8580B294DF7C400C52A7B /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		AAE85817294DFAD400C52A7B /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				AAE85818294DFAE200C52A7B /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,8 +472,10 @@
 				AAA55121294A2B6400691F99 /* LocationModel.swift in Sources */,
 				AA08DFED2940C27E0043E5CA /* InsetGalleryView.swift in Sources */,
 				AA2992DA2944E73B0005A1D6 /* VideoListItemView.swift in Sources */,
+				AAE85815294DF97C00C52A7B /* CreditsView.swift in Sources */,
 				AA9FAE45293D231F0050D903 /* CodableBundleExtension.swift in Sources */,
 				AA2CED6D294D906E00525C69 /* MotionAnimationView.swift in Sources */,
+				AAE85819294DFAE200C52A7B /* CenterModifier.swift in Sources */,
 				AA08DFEB2940C1890043E5CA /* HeadingView.swift in Sources */,
 				AA51F7602945093A00AA91AD /* VideoPlayerView.swift in Sources */,
 			);
