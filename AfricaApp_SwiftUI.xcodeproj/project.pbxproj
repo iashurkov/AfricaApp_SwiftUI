@@ -47,6 +47,7 @@
 		AAA5511F294A2AA000691F99 /* lioness.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AA0E53102933F7A900FB9DF5 /* lioness.mp4 */; };
 		AAA55121294A2B6400691F99 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA55120294A2B6400691F99 /* LocationModel.swift */; };
 		AAA55124294A2F7500691F99 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA55123294A2F7500691F99 /* MapAnnotationView.swift */; };
+		AAE85804294DEDD500C52A7B /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE85803294DEDD500C52A7B /* AnimalGridItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		AAA55114294A260100691F99 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		AAA55120294A2B6400691F99 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		AAA55123294A2F7500691F99 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		AAE85803294DEDD500C52A7B /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			children = (
 				AA9FAE3E293D1DF10050D903 /* CoverImageView.swift */,
 				AA5C40DA293FA33B00D4D167 /* AnimalListItemView.swift */,
+				AAE85803294DEDD500C52A7B /* AnimalGridItemView.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				AA5C40DB293FA33B00D4D167 /* AnimalListItemView.swift in Sources */,
 				AA8694DC2936847E004A7F52 /* MainView.swift in Sources */,
 				AA08DFF02940C5B80043E5CA /* InsetFactView.swift in Sources */,
+				AAE85804294DEDD500C52A7B /* AnimalGridItemView.swift in Sources */,
 				AA9FAE3F293D1DF10050D903 /* CoverImageView.swift in Sources */,
 				AA9FAE42293D21680050D903 /* CoverImageModel.swift in Sources */,
 				AA08DFE92940BF7D0043E5CA /* AnimalDetailView.swift in Sources */,
